@@ -3,7 +3,7 @@ const { Category } = require('../../db/models');
 module.exports = {
   getAllCategories: async (req, res, next) => {
     try {
-      console.log(req.user);
+      // console.log(req.user);
       const categories = await Category.findAll({
         where: { user: req.user.id },
         attributes: ['id', 'name'],
