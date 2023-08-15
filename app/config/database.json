@@ -1,10 +1,11 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "db_toko_buku",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "password": "mnmGEHvALSncrFoquiF8",
+    "database": "railway",
+    "host": "containers-us-west-203.railway.app",
+    "dialect": "mysql",
+    "port": "6439"
   },
   "test": {
     "username": "root",
@@ -15,9 +16,13 @@
   },
   "production": {
     "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "password": "mnmGEHvALSncrFoquiF8",
+    "database": "railway",
+    "host": "containers-us-west-203.railway.app",
+    "dialect": "mysql",
+    "dialectOptions": {
+      "ssl": { "rejectUnauthorized": false }
+    },
+    "port": "6439"
   }
 }
